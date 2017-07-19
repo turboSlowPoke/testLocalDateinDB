@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testLocalDateinDB.iml" filepath="$PROJECT_DIR$/.idea/modules/testLocalDateinDB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testLocalDateinDB_main.iml" filepath="$PROJECT_DIR$/.idea/modules/testLocalDateinDB_main.iml" group="testLocalDateinDB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testLocalDateinDB_test.iml" filepath="$PROJECT_DIR$/.idea/modules/testLocalDateinDB_test.iml" group="testLocalDateinDB" />
+    </modules>
+  </component>
+</project>
