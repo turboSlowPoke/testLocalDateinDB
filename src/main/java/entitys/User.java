@@ -3,6 +3,7 @@ package entitys;
 import com.sun.istack.internal.NotNull;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by kuteynikov on 07.07.2017.
@@ -21,6 +22,8 @@ public class User {
     private int level;
     private int leftKey;
     private int rightKey;
+    @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
+    private List<Transaction> transaction;
 
      User() {
     }
@@ -55,5 +58,13 @@ public class User {
 
     public void setRightKey(int rightKey) {
         this.rightKey = rightKey;
+    }
+
+    public List<Transaction> getTransaction() {
+        return transaction;
+    }
+
+    public void setTransaction(List<Transaction> transaction) {
+        this.transaction = transaction;
     }
 }
