@@ -18,9 +18,13 @@ public class Main {
         user1.setLevel(0);
         user1.setLeftKey(1);
         user1.setRightKey(2);
+        List<User> users = new ArrayList<>();
+        users.add(user1);
+
         List<Transaction> transactions = new ArrayList<>();
-        transactions.add(new Transaction(1.00f));
-        transactions.add(new Transaction(2.00f));
+        Transaction transaction = new Transaction(1.00f);
+        transaction.setUsers(users);
+        transactions.add(transaction);
         user1.setTransaction(transactions);
         dbService.addUserInDb(user1);
         //User user2 = new User("user02");

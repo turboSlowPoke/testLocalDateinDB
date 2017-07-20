@@ -23,7 +23,7 @@ public class User {
     private int leftKey;
     private int rightKey;
     @OneToMany(cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
-    private List<Transaction> transaction;
+    private List<Transaction> transactions;
 
      User() {
     }
@@ -61,10 +61,10 @@ public class User {
     }
 
     public List<Transaction> getTransaction() {
-        return transaction;
+        return transactions;
     }
 
     public void setTransaction(List<Transaction> transaction) {
-        this.transaction = transaction;
+        this.transactions = transaction;
     }
 }
